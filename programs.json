@@ -1,0 +1,34 @@
+[
+  {
+    "id": "your-ysws",
+    "name": "Your YSWS",
+    "posture": "active",
+    "scope": "program",
+    "helpChannel": "C0000000000",
+    "channels": ["C0000000000", "C1111111111"],
+    "sources": [
+      {
+        "name": "Program docs",
+        "type": "url",
+        "url": "https://example.com/docs",
+        "siteUrl": "https://example.com/docs"
+      },
+      {
+        "name": "Program FAQ",
+        "type": "json-faq",
+        "content": [
+          {
+            "question": "What is this program?",
+            "answer": "Replace this example with an official answer."
+          }
+        ]
+      }
+    ],
+    "milestones": [],
+    "guides": [],
+    "links": {
+      "site": "https://example.com",
+      "docs": "https://example.com/docs"
+    }
+  }
+]
