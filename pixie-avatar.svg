@@ -1,0 +1,42 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Head -->
+  <circle cx="200" cy="180" r="80" fill="none" stroke="black" stroke-width="3"/>
+  
+  <!-- Hair - messy pixie cut style -->
+  <path d="M 140 150 Q 130 120 140 100 Q 150 90 170 95 Q 180 85 200 85 Q 220 85 230 95 Q 250 90 260 100 Q 270 120 260 150" 
+        fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <line x1="145" y1="110" x2="155" y2="95" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  <line x1="160" y1="95" x2="165" y2="85" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  <line x1="240" y1="95" x2="235" y2="85" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  <line x1="255" y1="110" x2="245" y2="95" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Eyes - simple dots -->
+  <circle cx="175" cy="170" r="4" fill="black"/>
+  <circle cx="225" cy="170" r="4" fill="black"/>
+  
+  <!-- Smile -->
+  <path d="M 180 195 Q 200 205 220 195" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Body/shoulders -->
+  <path d="M 140 250 Q 140 265 150 275 L 170 300" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 260 250 Q 260 265 250 275 L 230 300" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <line x1="150" y1="270" x2="250" y2="270" stroke="black" stroke-width="3"/>
+  
+  <!-- Arms - one raised in wave -->
+  <path d="M 150 275 Q 120 280 100 265" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 250 275 Q 270 260 280 230 Q 285 210 275 200" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Waving hand lines -->
+  <line x1="270" y1="205" x2="265" y2="195" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  <line x1="275" y1="200" x2="280" y2="192" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  <line x1="280" y1="202" x2="288" y2="198" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Sparkles around her -->
+  <path d="M 310 160 L 315 165 L 320 160 L 315 155 Z" fill="none" stroke="black" stroke-width="2"/>
+  <path d="M 90 200 L 95 205 L 100 200 L 95 195 Z" fill="none" stroke="black" stroke-width="2"/>
+  <path d="M 320 240 L 323 243 L 326 240 L 323 237 Z" fill="none" stroke="black" stroke-width="1.5"/>
+  <path d="M 80 150 L 83 153 L 86 150 L 83 147 Z" fill="none" stroke="black" stroke-width="1.5"/>
+  
+  <!-- Small speech bubble tail -->
+  <path d="M 250 250 L 270 280 L 260 260" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</svg>
