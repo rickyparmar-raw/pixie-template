@@ -1,0 +1,42 @@
+# systemd user unit for pixie.
+#
+# Install:
+#   mkdir -p ~/.config/systemd/user
+#   cp scripts/pixie.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now pixie
+#
+# Logs:   journalctl --user -u pixie -f
+# Reload: systemctl --user restart pixie
+#
+# `loginctl enable-linger $USER` makes it survive logout / start at boot.
+#
+# Paths are absolute because systemd runs with a minimal environment and no
+# login shell — a bare `bun` would not resolve. Adjust WorkingDirectory and
+# ExecStart if the checkout lives somewhere else.
+
+[Unit]
+Description=Pixie — Pixl docs Slack bot
+After=network-online.target
+Wants=network-online.target
+# A config error (missing env var) exits 1 immediately and would otherwise
+# restart every 5s forever. Giving up after 5 tries in 5 minutes surfaces it as
+# a failed unit instead of a silent loop. A crash during normal operation is
+# nowhere near this rate, so it still self-heals.
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+WorkingDirectory=/home/wizrizz/Desktop/pixl-plan/Pixl/apps/pixie
+ExecStart=/home/wizrizz/.bun/bin/bun index.js
+Restart=always
+RestartSec=5
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=20
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
