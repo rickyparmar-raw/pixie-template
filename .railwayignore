@@ -6,9 +6,7 @@ docs
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
-pixie-wizard
 **/node_modules
-**/pixie-wizard
 pixie.db
 pixie.db-shm
 pixie.db-wal

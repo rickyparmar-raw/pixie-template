@@ -1,9 +1,0 @@
-{
-  "framework": "nextjs",
-  "crons": [
-    {
-      "path": "/api/cron/sweep-trials",
-      "schedule": "0 9 * * *"
-    }
-  ]
-}
