@@ -1,0 +1,4 @@
+[test]
+# See lib/test-setup.js — pins the test database before anything can open the
+# real one.
+preload = ["./lib/test-setup.js"]
